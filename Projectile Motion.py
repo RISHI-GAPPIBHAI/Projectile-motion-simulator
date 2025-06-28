@@ -60,4 +60,4 @@ while True:
     else:
         break
 print(f"OH😶....\noh🥲....\n yeah🙂,guess our journey ends here huh?....NO!, I'M NOT CRYING!!..MY PIXELS ARE SWEATING THOSE AREN'T TEARS!!😭😭😭😭")
-print("I hope you remember me when you give inputs to some other program🥀🥀🥀")
+print("I hope you remember me when you give inputs to some other programs🥀🥀🥀")
