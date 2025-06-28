@@ -1,0 +1,1 @@
+A projectile motion simulator which gives to complete freedom to decide the gravity,angle of projection,angle of ground from horizontal,initial velocity,name of your second kid and what not, to present you with the time of flight of the object, range of the object(along the ground) and maximum height attained by the object(perpendicular to the ground)
