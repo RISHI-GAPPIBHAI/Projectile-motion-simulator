@@ -53,6 +53,8 @@ while True:
     print(f"Time of flight would be {tof} seconds")
     print(f"Maximum Height perpendicular to ground would be {h_max} meters")
     print(f"Range Parallel to the ground would be {Range} meters")
+    print("Equation of trajectory of the motion:")
+    print(f"X={velocity*math.cos(angle_projectile*math.pi/180)}*[({math.sin(angle_ground*math.pi/180)})X-({math.cos(angle_ground*math.pi/180)})Y]/{velocity*math.cos((angle_projectile*math.pi/180)+(angle_ground*math.pi/180))}-1/2{gravity}({math.sin(angle_ground*math.pi/180)})X-({math.cos(angle_ground*math.pi/180)})Y]/{velocity*math.cos((angle_projectile*math.pi/180)+(angle_ground*math.pi/180))})²")
     try_again=input("Do you wanna stay??...maybe we can throw some more stones together...type yes if you agree else just press enter")
     if try_again.lower()=="yes":
         j+=1
