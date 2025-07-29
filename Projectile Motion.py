@@ -49,12 +49,12 @@ while True:
             print("You have to type in a real number greater than 0")
     tof=(2*velocity*(math.sin(angle_projectile*(math.pi/180))))/(gravity*math.cos(angle_ground*(math.pi/180)))
     h_max=(math.pow(velocity*(math.sin(angle_projectile*(math.pi/180))),2))/(2*gravity*math.cos(angle_ground*(math.pi/180)))
-    Range=(velocity*math.cos(angle_projectile*(math.pi/180)))*tof+((1/2)*(gravity*math.sin(angle_projectile*(math.pi/180)))*(math.pow(tof,2)))
+    Range=(velocity*math.cos(angle_projectile*(math.pi/180)))*tof+((1/2)*(gravity*math.sin(angle_ground*(math.pi/180)))*(math.pow(tof,2)))
     print(f"Time of flight would be {tof} seconds")
     print(f"Maximum Height perpendicular to ground would be {h_max} meters")
     print(f"Range Parallel to the ground would be {Range} meters")
     print("Equation of trajectory of the motion:")
-    print(f"X={velocity*math.cos(angle_projectile*math.pi/180)}*[({math.sin(angle_ground*math.pi/180)})X-({math.cos(angle_ground*math.pi/180)})Y]/{velocity*math.cos((angle_projectile*math.pi/180)+(angle_ground*math.pi/180))}-1/2{gravity}({math.sin(angle_ground*math.pi/180)})X-({math.cos(angle_ground*math.pi/180)})Y]/{velocity*math.cos((angle_projectile*math.pi/180)+(angle_ground*math.pi/180))})²")
+    print(f"X={velocity*math.cos(angle_projectile*math.pi/180)}*[({math.sin(angle_ground*math.pi/180)})X-({math.cos(angle_ground*math.pi/180)})Y]/{velocity*math.cos((angle_projectile*math.pi/180)+(angle_ground*math.pi/180))}-1/2*{gravity}*({math.sin(angle_ground*math.pi/180)})X-({math.cos(angle_ground*math.pi/180)})Y]/{velocity*math.cos((angle_projectile*math.pi/180)+(angle_ground*math.pi/180))})²")
     try_again=input("Do you wanna stay??...maybe we can throw some more stones together...type yes if you agree else just press enter")
     if try_again.lower()=="yes":
         j+=1
